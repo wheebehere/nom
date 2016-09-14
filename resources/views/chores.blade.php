@@ -59,7 +59,7 @@
   </style>
 </head>
 <body>
-
+<!-- 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -85,22 +85,21 @@
 </nav>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
+     Indicators 
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-<!--       <li data-target="#myCarousel" data-slide-to="1"></li> -->
-    </ol>
-
+       <li data-target="#myCarousel" data-slide-to="1"></li> 
+    </ol> -->
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
+<!--    <div class="carousel-inner" role="listbox">
       <div class="item active">
         <img src="http://placehold.it/1200x400?text=IMAGE" alt="Image">
-        <div class="carousel-caption">
+        <div class="carousel-caption"> -->
 <!--           <h3>Sell $</h3>
-          <p>Money Money.</p> -->
+          <p>Money Money.</p> 
         </div>
       </div>
-
+-->
 <!--       <div class="item">
         <img src="http://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
         <div class="carousel-caption">
@@ -119,10 +118,10 @@
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a> -->
-</div>
+<!--</div>
   
 <div class="container text-center">
-  <h3>What We Do</h3><br>
+   <h3>What We Do</h3><br>
   <div class="row">
     <div class="col-sm-4">
       <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
@@ -139,9 +138,36 @@
       <div class="well">
        <p>Some text..</p>
       </div>
+    
+        
     </div>
   </div>
-</div>
+</div> -->
 
+<div class='container'>
+  <div class="table-responsive">
+    <table class="table">
+
+      <!-- On cells (`td` or `th`) -->
+      <tr>
+        <th>Chore</th>
+        <th>Chore Description</th>
+        <th>Chore Frequency</th>
+      </tr>
+
+      @foreach ( $chores as $key => $value )
+        {{$key}}
+
+      <tr>
+        <td>$key[$value]</td>
+        <td>$key[$value]</td>
+        <td>$key[$value]</td>
+      </tr>
+
+      @endforeach
+
+    </table>
+</div>
+</div>
 </body>
 </html>

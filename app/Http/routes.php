@@ -19,9 +19,7 @@ Route::get('/admin', function () {
     return view('admin');
 });
 
-Route::get('/chores', function () {
-    return view('chores');
-});
+Route::get('/chores', 'ChoreController@chores');
 
 Route::get('/familycalendar', function () {
     return view('familycalendar');
