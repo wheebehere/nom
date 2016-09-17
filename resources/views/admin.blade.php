@@ -8,13 +8,9 @@
         	<div class="panel panel-default">
         		<div class="panel-heading center">User Control Panel</div>
         		<div class="panel-body">
-					<div class="col-xs-12 col-sm-6 col-md-8">Overview</div>
-					<div class="col-xs-6 col-md-4">Create Addtional User</div>
-					<div class="col-xs-6 col-sm-4">Delete Addtional User</div>
-					<div class="col-xs-6 col-sm-4">Change Addtional User Password</div>
-					<!-- Optional: clear the XS cols if their content doesn't match in height -->
-					<div class="clearfix visible-xs-block"></div>
-					<div class="col-xs-6 col-sm-4">Other Settings</div>
+					<button type="button" class="btn btn-primary btn-lg btn-block">Create Additional User</button>
+					<button type="button" class="btn btn-default btn-lg btn-block">Delete Additional User</button>
+					<button type="button" class="btn btn-default btn-lg btn-block">Change Additional User</button>
 				</div>
 			</div>
 		</div>

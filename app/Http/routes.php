@@ -23,20 +23,22 @@ Route::get('/admin', function () {
 
 Route::get('/chores', 'ChoreController@chores');
 
-Route::get('/familycalendar', function () {
-    return view('familycalendar');
-});
+Route::get('/createchores', 'CreateController@gotorightform');
 
-Route::get('/useroverview', function () {
-    return view('useroverview');
-});
+// Route::get('/familycalendar', function () {
+//     return view('familycalendar');
+// });
 
-Route::get('/familymessagectr', function () {
-    return view('familymessagectr');
-});
+// Route::get('/useroverview', function () {
+//     return view('useroverview');
+// });
 
-Route::get('/todolist', function () {
-    return view('todolist');
-});
+// Route::get('/familymessagectr', function () {
+//     return view('familymessagectr');
+// });
 
-Route::get('/home', 'HomeController@index');
+// Route::get('/todolist', function () {
+//     return view('todolist');
+// });
+
+//Route::get('/home', 'HomeController@index');

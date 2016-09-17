@@ -43,28 +43,28 @@
                     NoMoreChaos!
                 </a>
             </div>
-
-            <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                <!-- Left Side Of Navbar -->
-                <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/chores') }}">Chores</a></li>
-                </ul>
-                <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/familycalendar') }}">Family Calendar</a></li>
-                </ul>
-                <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/todolist') }}">ToDoList</a></li>
-                </ul>
-                <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/admin') }}">Admin</a></li>
-                </ul>
-                <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/useroverview') }}">User Overview</a></li>
-                </ul>
-                <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/home') }}">Miscellaneous</a></li>
-                </ul>
-
+            @if (!Auth::guest())
+                <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="nav navbar-nav">
+                        <li><a href="{{ url('/chores') }}">Chores</a></li>
+                    </ul>
+    <!--            <ul class="nav navbar-nav">
+                        <li><a href="{{ url('/familycalendar') }}">Family Calendar</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li><a href="{{ url('/todolist') }}">ToDoList</a></li>
+                    </ul> -->
+                    <ul class="nav navbar-nav">
+                        <li><a href="{{ url('/admin') }}">Admin</a></li>
+                    </ul>
+    <!--                 <ul class="nav navbar-nav">
+                        <li><a href="{{ url('/useroverview') }}">User Overview</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li><a href="{{ url('/home') }}">Miscellaneous</a></li>
+                    </ul> -->
+            @endif
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
