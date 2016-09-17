@@ -11,6 +11,8 @@
 |
 */
 
+Route::auth();
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -33,6 +35,8 @@ Route::get('/familymessagectr', function () {
     return view('familymessagectr');
 });
 
-Route::get('/todolists', function () {
-    return view('todolists');
+Route::get('/todolist', function () {
+    return view('todolist');
 });
+
+Route::get('/home', 'HomeController@index');
